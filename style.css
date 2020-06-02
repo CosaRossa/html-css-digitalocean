@@ -9,11 +9,47 @@
   padding: 0 10%;
 }
 
-
 .ms-button {
   color: #006aff !important;
   border: 1px solid #006aff;
   border-radius: 0.7rem;
+}
+
+p {
+  font-weight: 300;
+}
+
+.business a {
+  padding: 3rem 0 5rem;
+  display: inline-block;
+  color: #006aff !important;
+}
+
+.business a:hover {
+  color: #1633ff !important;
+  text-decoration: none;
+}
+
+.business a i {
+  font-size: 1rem;
+}
+
+.circle {
+  display: inline-block;
+  border: 2px solid #006aff;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+ .circle.blue {
+  background-color: #006aff;
+}
+
+.circle:hover {
+  background-color: #006aff;
 }
 
 /* HEADER */
@@ -29,6 +65,7 @@ nav.navbar.navbar-default{
   box-shadow: none;
   background-color: #fff;
   height: 7rem;
+  border-radius: 0 0 4px 4px;
 }
 
 nav .navbar-brand img {
@@ -54,6 +91,7 @@ nav .navbar-nav {
   margin-top: 0.9rem;
   margin-left: 1rem;
   padding: 0.5rem 1.3rem;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .navbar-default .navbar-nav>li>a.ms-button:hover {
@@ -126,6 +164,9 @@ nav .navbar-nav {
   background-size: cover;
   background-position: bottom;
   color: #fff;
+}
+#ms-jumbotron .text {
+  padding: 15px;
 }
 
 #ms-jumbotron h1 {
@@ -208,4 +249,465 @@ nav .navbar-nav {
 #ms-jumbotron #sign-up small {
   color: #fff;
   font-weight: 300;
+}
+
+/* MAIN */
+
+/* Sezione customers */
+#customers {
+  background-color: rgb(243, 245, 249);
+}
+
+#customers h6 {
+  padding: 4rem 0 1.5rem;
+  font-size: 1.5rem
+}
+
+/* Sezione deploy */
+#deploy h3 {
+  color: #031b4e;
+  font-size: 3.5rem;
+  margin: 12rem 0 3rem;
+}
+
+#deploy p {
+  color: #5b6987;
+  font-size: 2rem;
+}
+
+#deploy .menu-left {
+  color: rgba(3, 27, 78, 0.6);
+  border-left: 2px solid rgb(229, 232, 237);
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+}
+
+#deploy .menu-left:hover {
+  color: hsl(221,93%,16%);
+  border-left-color: #006aff;
+}
+
+#deploy .margin-property {
+  margin: 6rem auto;
+}
+
+#deploy .property-item {
+  margin: 2.5rem 0;
+  padding-right: 4rem;
+}
+
+#deploy .property-item h4{
+  margin: 1.5rem 0;
+}
+
+#deploy .property-item p {
+  font-size: 1.6rem;
+}
+
+/* Sezione designed */
+
+#designed {
+  background-color: #f3f5f9;
+  padding: 10rem 0;
+}
+
+#designed h3 {
+  color: #031b4e;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+#designed p {
+  color: #031b4e;
+  font-size: 2rem;
+}
+
+#designed .row.text-center {
+  padding-top: 6rem;
+}
+
+#designed i {
+  font-size: 2rem;
+  margin-top: 218px;
+  color: #7e9aa9;
+}
+
+#designed i:hover {
+  color: #5b6987;
+}
+
+#designed img {
+  max-width: 95%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(3,27,78,0.06);
+}
+
+#designed .row.text-center p {
+  font-size: 1.6rem;
+  color: #5b6987;
+  padding: 3rem 5rem 1rem;
+}
+
+/* Sezione built */
+#built {
+  padding: 10rem 0;
+}
+
+#built .property-item {
+  margin-top: 6rem;
+}
+
+#built h3 {
+  color: #031b4e;
+  font-size: 3.5rem;
+}
+
+#built h4 {
+  padding: 1rem 0;
+}
+
+#built p {
+  font-size: 1.6rem;
+}
+
+#built .business a {
+  padding: 0;
+}
+
+/* Sezione service */
+#service {
+  padding: 10rem 0;
+  background: url(https://images.prismic.io/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg?auto=compress,format) 50% 50% / cover no-repeat rgb(3, 27, 78);
+  background-position: top;
+  color: #fff;
+}
+
+#service h3 {
+  font-size: 3.5rem;
+}
+
+#service p {
+  font-size: 2rem;
+}
+
+#service .text a{
+ color: #006aff !important;
+}
+
+#service ul {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: 1fr;
+  grid-gap: 0px 30px;
+  grid-template-columns: repeat(2,minmax(220px,1fr));
+  margin: 6.5rem auto 0;
+}
+
+#service li {
+  border-bottom: 1px solid hsla(0,0%,100%,0.2);
+  align-items: center;
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+}
+
+#service span.sigle {
+  width: 90px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+#service span.location {
+  display: inline-block;
+  width: 360px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#service a {
+  color: rgb(0, 215, 210)!important;
+  text-decoration: none;
+}
+
+#service a:hover,
+#service .text a:hover{
+  color: #1633ff !important;
+}
+
+#service .no-bot {
+  border-bottom: 0;
+}
+
+/* Sezione develop */
+#develop {
+  padding: 10rem 0;
+  background-color: #f3f5f9;
+}
+
+#develop h3 {
+  font-size: 3.5rem;
+}
+
+#develop p {
+  font-size: 2rem;
+}
+
+#develop .text a{
+ color: #006aff !important;
+}
+
+#develop .text a:hover{
+  color: #1633ff !important;
+  text-decoration: none;
+}
+
+#develop .row.text-center {
+  padding-top: 6rem;
+}
+
+#develop i {
+  font-size: 2rem;
+  margin-top: 160px;
+  color: #7e9aa9;
+}
+
+#develop i:hover {
+  color: #5b6987;
+}
+
+#develop .fake-car {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(3,27,78,0.06);
+  color: #5b6987;
+  padding: 6rem;
+  margin-bottom: 5rem;
+}
+
+#develop img[src*="rocker"] {
+  max-width: 150px;
+}
+
+#develop .fake-car p {
+  margin: 4rem 0;
+}
+
+/* Sezione get */
+#get {
+  padding: 4rem 0 6rem;
+  background-image: url(img/bg-home-cta.svg);
+  background-size: cover;
+  background-color: #0069ff;
+}
+
+#get h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#get .white-button {
+  width: 225px;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+#get .white-button a {
+  color: #0069ff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+#get .white-button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* FOOTER  */
+footer {
+  background-color: hsl(220,95%,8%);
+  color: hsla(0,0%,100%,0.5);
+  padding: 4rem 0 0;
+}
+
+footer a {
+  color: hsla(0,0%,100%,0.5);
+  font-weight: 300;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Section  five-col*/
+#five-col {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid hsla(0,0%,100%,0.2);
+}
+
+#five-col h5 {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+#five-col li {
+  list-style: none;
+  line-height: 3rem;
+}
+
+/* Section bot-page */
+#bot-page {
+  padding: 2.5rem 0;
+}
+
+#bot-page p {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+#bot-page li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 1rem 0;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1199px) {
+  #designed .col-lg-2 {
+    display: none;
+  }
+
+  #service span.sigle {
+    width: 65px;
+  }
+
+  #service span.location {
+    width: 285px;
+  }
+
+  #service li.yes-bot {
+    border-bottom: 1px solid hsla(0,0%,100%,0.2);
+  }
+
+  #develop .col-lg-1 {
+    display: none;
+  }
+
+  #get .col-lg-7 {
+    text-align: center;
+  }
+
+  #get .white-button{
+    float: none !important;
+    display: table;
+    margin: 1rem auto 0;
+
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #ms-jumbotron .text {
+    text-align: center;
+  }
+
+  #ms-jumbotron h1 {
+    font-size: 5rem;
+    margin-top: 4rem
+  }
+
+  #ms-jumbotron #sign-up {
+    margin: 25px auto 40px;
+  }
+
+  #deploy h3 {
+    margin-top: 5rem;
+  }
+
+  #deploy .margin-property {
+    margin: 3rem auto;
+  }
+
+  #deploy .row.ms-table {
+    display: table;
+    margin: 0 auto 2rem;
+  }
+
+  #deploy .menu-left {
+    border-left: 0;
+    border-bottom: 2px solid rgb(229, 232, 237);
+    display: inline-block;
+    float: left;
+  }
+
+
+  #deploy .menu-left:hover {
+    border-bottom-color: #006aff;
+  }
+
+  #deploy div.property-item {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #designed,
+  #built,
+  #service,
+  #develop {
+    padding: 4rem 0 3rem;
+  }
+
+  #service ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #service li {
+    display: flex;
+    margin: auto;
+  }
+
+  #service span.sigle {
+    width: 90px;
+  }
+
+  #service span.location {
+    width: 400px;
+  }
+
+  #service li a {
+    width: 95px;
+  }
+
+  #bot-page #social,
+  #bot-page #rights  {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  #ms-jumbotron h1 {
+    font-size: 4.5rem;
+  }
+
+  div.property-item {
+    text-align: center;
+  }
+
+  #service span.sigle {
+    width: 70px;
+  }
+
+  #service span.location {
+    width: 200px;
+  }
+
+}
+
+@media screen and (max-width: 489px) {
+  #deploy .menu-left {
+    padding: 1.5rem 0.8rem;
+  }
 }
