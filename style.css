@@ -109,7 +109,7 @@ nav .navbar-nav {
 }
 
 /* Modify breakpoint hamburger menù */
-@media (max-width: 1000px) {
+@media (max-width: 1170px) {
   .navbar-header {
     float: none;
   }
