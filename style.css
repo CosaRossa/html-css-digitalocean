@@ -76,11 +76,14 @@ nav .navbar-brand img {
 }
 
 nav .navbar-nav {
-  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  background-color: #fff;
+  margin: 0;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: hsl(221,93%,16%);
+  background-color: #fff;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -91,6 +94,7 @@ nav .navbar-nav {
   margin-top: 0.9rem;
   margin-left: 1rem;
   padding: 0.5rem 1.3rem;
+  width: 76px;
   transition: color 0.3s, background-color 0.3s;
 }
 
@@ -116,6 +120,11 @@ nav .navbar-nav {
   .navbar-left,.navbar-right {
     float: none !important;
   }
+
+  .navbar-default .navbar-nav>li>a.ms-button {
+    margin-bottom: 2rem;
+  }
+
   .navbar-toggle {
     display: block;
   }
@@ -132,7 +141,6 @@ nav .navbar-nav {
   }
   .navbar-nav {
     float: none!important;
-    margin-top: 7.5px;
   }
   .navbar-nav>li {
     float: none;
